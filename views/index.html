@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Request Header Parser</title>
+    <meta name="description" content="An API to return request header information">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container-fluid" id="app">
+        <div id="header">
+            <h1 class="text-center">Request Header Parser API</h1>
+            <p class="text-right">by QuanchiFootball</p>
+        </div>
+        <br>
+        <p>
+            This is a simple API that will take an XMLHttp Request and return an object containing 1) the requester's public IP address, 2) the first acceptable response language, and 3) the requester's operating software.
+        </p>
+        <br>
+        <h4>Example</h4>
+        <p>Possible URL Inputs :</p>
+        <div class="well container blackbox">
+            https://qcfb-requestheaderparser.glitch.me/whoami
+        </div>
+        <p>Returns :</p>
+        <div class="well container blackbox">
+            {
+          <br>
+          "ipaddress":"24.80.111.3",
+          <br>
+            "language":"en-US",
+          <br>
+            "os":"Windows NT 10.0; Win64; x64"
+          <br>
+          }
+        </div>
+        <footer>
+            <em>I wrote this API as part of FreeCodeCamp's Back-end development curriculum.<br>
+            Check out the source on my <a href="https://quanchifootball.github.io" target="_blank">Github page</a></em>
+        </footer>
+    </div>
+  </body>
+</html>
